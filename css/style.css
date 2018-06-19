@@ -1,0 +1,418 @@
+  /* 
+   Stylesheet for the Renegades/American School Exhibition Site //
+  
+   Table of Contents
+   - - - - - - - - -
+   General Styles
+   Header Image
+   Homepage
+   Paragraph Bundle Style
+   Parallax
+   Color Block
+   Buttons
+   Navigation Bar
+   Global Footer
+   Social Media Icons
+   - - - - - - - - -
+ */
+ 
+ 
+ /**
+ * General Styles
+ */
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.col-md-12{
+	padding: 0;
+}
+
+body {
+	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
+	font-size: 1.5em;
+	line-height: 1.25;
+	padding-top: 168px;
+}	
+
+h1, h2, h3 {
+	font-weight: bold;
+}
+
+h4, h5, h6{
+	font-weight: bold;
+}
+
+a {
+    color: #7fb6d2;
+	font-weight: bold;
+}
+
+a:hover{
+	color: #153f59;
+}
+
+.dropshadow-border{ /* Border + dropshadow design element */
+	padding: 15px;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 10px;
+}
+
+.center{
+	text-align: center;
+}
+
+.img-center{
+	margin: 0 auto;
+}
+
+.fixed-to-top{
+	position: fixed; 
+    top: 0;
+    width: 100%;
+	z-index: 1030;
+}
+
+.lib-logo{
+	background-color: #000;
+}
+
+  @media (max-width: 1180px) {
+    .lib-logo{
+		border-bottom: 0px;
+  }
+  } 
+
+.lib-logo img{
+	padding: 15px 20px 15px 30px;
+} 
+
+
+
+ /**
+ * Homepage
+ */
+ 
+.intro-quote{
+	font-size: 1.9em;
+	font-family: 'Fjalla One', sans-serif;
+	color: #383838;
+	padding: 40px;
+	border: dashed #841617;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+
+  @media (max-width: 800px) {
+    .intro-quote{
+		font-size: 1.3em;
+  }
+  }  
+  
+.section-wires{
+	background-image: url('../img/wires.png');
+	background-position: center;
+	 background-repeat: no-repeat;
+	background-color: #e3e3e3;
+	padding: 20px;
+}
+
+.section-gray{
+	background-color: #fff;
+	padding: 50px;
+}
+
+
+ @media (max-width: 768px) {
+  .img-hide {
+    display: none;
+  }
+
+}
+
+
+
+/*Paragraph Bundle Style*/ 
+
+.featured{
+	border: 1px solid #cecece;
+	padding: 5px;
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: #fff;
+}
+
+.featured-section{
+	border-bottom: 1px dashed #cecece;
+	background-color: #fdfdfd;
+	border-radius: 5px;
+	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+/**
+ * Parallax
+ */
+
+.parallax-window {
+	min-height: 90vh;
+	background: none;
+	position: relative;
+	margin-top: -170px;
+}
+
+  @media (max-width: 1025px) {
+    .parallax-window{
+		display: none;
+  }
+  } 
+  
+  
+  
+ /**
+ * Parallax Replacement (Mobile)
+ */  
+ 
+
+  @media (min-width: 1025px) {
+    .header{
+		display: none;
+  }
+  } 
+  
+
+  
+  /**
+ * Color Block
+ */
+
+.color-block {
+    background: #153f59;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.color-block:after {
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(-2.9deg);
+    transform-origin: 100%;
+    z-index: -1;
+}
+
+
+
+ /**
+ * Buttons
+ */
+
+.btn-custom {
+	background-color: #7fb6d2;
+	border: 0;
+	color: #fff;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+.btn-custom:hover {
+	background-color: #153f59;
+	border: 0;
+	color: #fff;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+ 
+ 
+ /**
+ * Navigation Bar
+ */
+
+.navbar{
+	background-color: #fff;
+	border-radius: 0;
+	font-size: 1.4em;
+	padding: 5px;
+} 
+
+  @media (max-width: 845px) {
+    .navbar{
+	font-size: 1.2em;
+  }
+  } 
+
+
+  
+@media (min-width: 768px) and (max-width: 880px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+	  .navbar-header {
+        float:none;
+    }
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #7fb6d2;
+	border-bottom: 8px solid transparent;
+	margin: 2px;
+}
+ 
+.navbar-default .navbar-nav>li>a:hover{
+	color: #06131c;
+	border-bottom: 8px solid #133f59;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
+.exhibit-logo {
+	width: 70%;
+	padding: 5px;
+}
+
+  @media (max-width: 880px) {
+    .exhibit-logo{
+		width: 75%;
+  }
+  } 
+  
+  
+  
+ /**
+ * Global Footer
+ */	
+ 
+.footer{
+    background-color: #333;
+    color: #999;
+    font-size: 1em;
+	padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 1.2em;
+	border-top: 7px solid #1f1f1f;
+    width: 100%;
+	margin-top:0;
+}
+
+.footer a{
+    color: #ececec !important;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer ul{ 
+	margin: 0; 
+	padding: 0;
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer img{
+	float: left;
+	padding-right: 1em;
+}
+
+
+
+ /**
+ * Social Media Icons
+ */	
+
+.social ul{
+    display: block;
+}
+
+.social ul li a.facebook,
+.social ul li a.twitter,
+.social ul li a.youtube,
+.social ul li a.instagram{
+    display: block; 
+    height: 45px;
+    width: 45px;
+    float: left;
+}
+
+.social ul li a {
+    /*background-image: url(../img/social-icons.png);*/
+    background-repeat:no-repeat;
+	line-height:0;
+	margin-right:5px;
+}
+
+.social ul li a.facebook{ 
+	background-position:0 0; 
+}
+
+.social ul li a.facebook:hover{ 
+	background-position:-46px 0; 
+}
+
+.social ul li a.twitter{ 
+	background-position:0 -46px; 
+}
+
+.social ul li a.twitter:hover{ 
+	background-position:-46px -46px; 
+}
+
+.social ul li a.youtube{ 
+	background-position: 0 -92px; 
+}
+
+.social ul li a.youtube:hover{ 
+	background-position: -46px -92px; 
+}
+
+.social ul li a.instagram{ 
+	background-position: 0 -276px; 
+}
+
+.social ul li a.instagram:hover{ 
+	background-position: -46px -276px; 
+}
+
+.contact_icons{
+	float: left;
+}
+
+.mc-field-group {
+	padding:10px 0px 10px 0px;
+	
+}

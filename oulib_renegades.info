@@ -1,0 +1,32 @@
+name = renegades
+description = A Bootstrap Sub-theme.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[lib_logo]       = 'Library Logo'
+regions[logo]           = 'Logo'
+regions[header]         = 'Header Image'
+regions[homepage_quote] = 'Homepage Quote'
+regions[homepage_events] = 'Homepage Events'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[login]			= 'Login'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/globalnav.css
