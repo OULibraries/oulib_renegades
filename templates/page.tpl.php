@@ -96,7 +96,7 @@
 
 
 <!-- Header Image -->
-<div class="carousel_inner carousel-fade hidden-xs">
+<div class="hidden-xs">
     <?php print render($page['header']); ?>
   </div>
 
@@ -251,20 +251,20 @@
                     <ul>
                         <li><a href="https://www.facebook.com/oulibraries"
                                class="facebook" title="facebook"
-                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/facebook.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/facebook.png"
                                                     alt="Facebook Icon"></a></li>
                         <li><a href="https://twitter.com/OU_Libraries"
                                class="twitter" title="twitter"
-                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/twitter.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/twitter.png"
                                                     alt="Twitter Icon"></a></li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
                                class="youtube" title="youtube"
-                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/youtube.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/youtube.png"
                                                     alt="YouTube Icon"></a></li>
                         <li><a href="https://www.instagram.com/oulibraries/"
                                class="instagram" title="instagram"
-                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/instagram.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/instagram.png"
                                                     alt="Instagram Icon"></a></li>
                     </ul>
                 </div>
