@@ -89,52 +89,57 @@
 </div>
 
 
-<!-- OU Libraries Logo -->
-<div class="lib_logo">
-		<?php print render($page['lib_logo']); ?>
+<!-- Page Header Content -->	
+<div class="fixed-to-top">
+
+	<!-- OU Libraries Logo -->
+	<div class="lib_logo">
+			<?php print render($page['lib_logo']); ?>
+	</div>
+
+
+	<!-- Header Image -->
+	<div class="carousel_inner carousel-fade hidden-xs">
+		<?php print render($page['header']); ?>
+	  </div>
+
+	  
+	<!-- Logo + Navigation Bar -->
+	<div class="menu">
+
+	<nav class="navbar navbar-default" role="navigation">
+	  <div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  
+				<?php if (!empty($page['logo'])): ?>
+					<?php print render($page['logo']); ?>
+				<?php endif; ?>
+		   
+		  
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+			<?php if (!empty($primary_nav)): ?>
+				<?php print render($primary_nav); ?>
+			<?php endif; ?>  
+		  </ul>   
+		  
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	 
+	</div> <!-- /#menu -->
 </div>
 
-
-<!-- Header Image -->
-<div class="hidden-xs">
-    <?php print render($page['header']); ?>
-  </div>
-
-  
-<!-- Logo + Navigation Bar -->
-<div class="menu">
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-	  
-			<?php if (!empty($page['logo'])): ?>
-                <?php print render($page['logo']); ?>
-            <?php endif; ?>
-	   
-      
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-        <?php endif; ?>  
-      </ul>   
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
- 
-</div> <!-- /#menu -->
 
 
 <!-- Homepage Quote -->
@@ -251,20 +256,20 @@
                     <ul>
                         <li><a href="https://www.facebook.com/oulibraries"
                                class="facebook" title="facebook"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/facebook.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/facebook.png"
                                                     alt="Facebook Icon"></a></li>
                         <li><a href="https://twitter.com/OU_Libraries"
                                class="twitter" title="twitter"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/twitter.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/twitter.png"
                                                     alt="Twitter Icon"></a></li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
                                class="youtube" title="youtube"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/youtube.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/youtube.png"
                                                     alt="YouTube Icon"></a></li>
                         <li><a href="https://www.instagram.com/oulibraries/"
                                class="instagram" title="instagram"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/instagram.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_exhibits/img/instagram.png"
                                                     alt="Instagram Icon"></a></li>
                     </ul>
                 </div>
