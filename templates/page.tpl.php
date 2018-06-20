@@ -136,7 +136,7 @@
 
 
 <!-- Header Image -->
-	<div class="carousel_inner carousel-fade hidden-xs">
+	<div class="hidden-xs">
 		<?php print render($page['header']); ?>
 	  </div>
 
@@ -199,6 +199,11 @@
 </div>
 
 <!-- end body tag -->
+</div>
+	
+<!-- Events Color Block Header -->
+<div class="color-block">
+		<?php print render($page['events_header']); ?>
 </div>
 
 
