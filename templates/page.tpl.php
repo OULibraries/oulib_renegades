@@ -142,7 +142,7 @@
 
 
 <!-- Homepage Quote -->
-<div class="homepage_events">
+<div class="homepage_quote">
 		<?php print render($page['homepage_quote']); ?>
 </div>
 
@@ -264,7 +264,7 @@
                         <li>
                             <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
                                class="youtube" title="youtube"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegadess/img/youtube.png"
+                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/youtube.png"
                                                     alt="YouTube Icon"></a></li>
                         <li><a href="https://www.instagram.com/oulibraries/"
                                class="instagram" title="instagram"
