@@ -99,6 +99,11 @@ a:hover{
  * Homepage
  */
  
+.homepage-quote{
+	background-color: #fff;
+	padding: 50px;
+}
+
 .intro-quote{
 	font-size: 1.9em;
 	font-family: 'Fjalla One', sans-serif;
@@ -122,12 +127,6 @@ a:hover{
 	background-color: #e3e3e3;
 	padding: 20px;
 }
-
-.section-gray{
-	background-color: #fff;
-	padding: 50px;
-}
-
 
  @media (max-width: 768px) {
   .img-hide {
