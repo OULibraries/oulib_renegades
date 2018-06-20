@@ -97,12 +97,6 @@
 			<?php print render($page['lib_logo']); ?>
 	</div>
 
-
-	<!-- Header Image -->
-	<div class="carousel_inner carousel-fade hidden-xs">
-		<?php print render($page['header']); ?>
-	  </div>
-
 	  
 	<!-- Logo + Navigation Bar -->
 	<div class="menu">
@@ -140,6 +134,11 @@
 	</div> <!-- /#menu -->
 </div>
 
+
+<!-- Header Image -->
+	<div class="carousel_inner carousel-fade hidden-xs">
+		<?php print render($page['header']); ?>
+	  </div>
 
 
 <!-- Homepage Quote -->
@@ -214,7 +213,7 @@
     <div class="container-fluid">
         <div class="row" style="padding-top: 20px;">
             <div class="col-md-3 col-sm-4 col-xs-12" style="padding-bottom: 30px;">
-                <img src="/sites/all/themes/oulib_exhibits/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;"/>
+                <img src="/sites/all/themes/oulib_renegades/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;"/>
                 <a href="http://libraries.ou.edu" target="_blank">University
                     Libraries</a><br/>
 					401 W. Brooks St<br/>
