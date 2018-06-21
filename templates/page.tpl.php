@@ -135,10 +135,12 @@
 </div>
 
 
-<!-- Header Image -->
-	<div class="hidden-xs">
-		<?php print render($page['header']); ?>
-	  </div>
+<!-- Parallax Window -->	
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/banner.jpg" data-image-class="img-responsive" data-image-alt="Parallax Image"><span role="img" aria-label="Parallax Image"> </span></div>	
+<!-- Parallax Replacement on Mobile -->
+<div class="header">
+	<img src="img/banner.jpg" class="img-responsive" alt="Header Image">
+</div>	
 
 
 <!-- Homepage Quote -->
@@ -202,8 +204,10 @@
 </div>
 	
 <!-- Events Color Block Header -->
-<div class="color-block">
+<div class="events_header">
+		<?php if (!empty($page['events_header'])): ?>
 		<?php print render($page['events_header']); ?>
+		<?php endif; ?>
 </div>
 
 
