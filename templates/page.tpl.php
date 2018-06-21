@@ -136,10 +136,11 @@
 
 
 <!-- Parallax Window -->	
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/banner.jpg" data-image-class="img-responsive" data-image-alt="Parallax Image"><span role="img" aria-label="Parallax Image"> </span></div>	
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php print render($page['header_image']); ?>"></div>	
+
 <!-- Parallax Replacement on Mobile -->
 <div class="header">
-	<img src="img/banner.jpg" class="img-responsive" alt="Header Image">
+	<img src="<?php print render($page['header_image']); ?>" class="img-responsive" alt="Header Image">
 </div>	
 
 
