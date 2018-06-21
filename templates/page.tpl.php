@@ -134,9 +134,8 @@
 	</div> <!-- /#menu -->
 </div>
 
-
-<!-- Parallax Window -->	
-<div class="parallax-window" data-parallax="scroll" data-image-src="<?php print render($page['header_image']); ?>"></div>	
+<!-- Parallax Image Header -->
+<?php print render($page['header_image']); ?>">
 
 <!-- Parallax Replacement on Mobile -->
 <div class="header">
