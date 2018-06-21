@@ -63,6 +63,7 @@ a:hover{
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 10px;
 	margin-top: 40px;
+	min-height: 200px;
 }
 
 .center{
