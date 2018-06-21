@@ -62,6 +62,7 @@ a:hover{
     border: 1px solid #c9c9c9;
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 .center{
@@ -197,7 +198,7 @@ a:hover{
 .color-block {
     background: #153f59;
     color: #fff;
-    padding: 50px;
+    padding: 65px;
     position: relative;
     z-index: 1;
 }
@@ -207,11 +208,11 @@ a:hover{
     bottom: 0;
     content: '';
     display: block;
-    height: 50%;
+    height: 40%;
     left: 0;
     position: absolute;
     right: 0;
-    transform: skewY(-2.9deg);
+    transform: skewY(-2.7deg);
     transform-origin: 100%;
     z-index: -1;
 }
