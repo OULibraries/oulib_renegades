@@ -135,12 +135,7 @@
 </div>
 
 <!-- Parallax Image Header -->
-<?php print render($page['header']); ?>">
-
-<!-- Parallax Replacement on Mobile -->
-<div class="header">
-	<img src="<?php print render($page['header']); ?>" class="img-responsive" alt="Header Image">
-</div>	
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php print render($page['header']); ?>"></div>
 
 
 <!-- Homepage Quote -->
