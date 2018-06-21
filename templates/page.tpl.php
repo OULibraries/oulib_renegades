@@ -135,11 +135,11 @@
 </div>
 
 <!-- Parallax Image Header -->
-<?php print render($page['header_image']); ?>">
+<?php print render($page['header']); ?>">
 
 <!-- Parallax Replacement on Mobile -->
 <div class="header">
-	<img src="<?php print render($page['header_image']); ?>" class="img-responsive" alt="Header Image">
+	<img src="<?php print render($page['header']); ?>" class="img-responsive" alt="Header Image">
 </div>	
 
 
