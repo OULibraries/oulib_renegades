@@ -74,6 +74,8 @@
  */
 ?>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="sites/all/libraries/parallax.js/parallax.min.js"></script>
 
 <!-- OU Global Header -->
 <div class="global_header">
