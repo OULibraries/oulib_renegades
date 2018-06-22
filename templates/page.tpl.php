@@ -137,8 +137,7 @@
 </div>
 
 <!-- Parallax Image Header -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="<?php print render($page['header']); ?>" data-image-class="img-responsive" data-image-alt="Parallax Image"><span role="img" aria-label="Parallax Image"> </span></div>	
-
+<?php print render($page['header']); ?>
 
 <!-- Homepage Quote -->
 <div class="homepage_quote">
