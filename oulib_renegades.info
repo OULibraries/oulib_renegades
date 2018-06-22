@@ -31,3 +31,9 @@ regions[login]			= 'Login'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/globalnav.css
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = js/parallax.min.js
