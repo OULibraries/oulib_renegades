@@ -58,8 +58,9 @@ a:hover{
 
 .dropshadow-border{ /* Border + dropshadow design element */
 	padding: 50px;
-    background-color: #fff;
-    border-top: 10px solid #841617;
+	background-color: #fff;
+        background-image: url('../img/paper_bg.jpg');
+        border-top: 10px solid #841617;
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 10px;
 	margin-top: 40px;
@@ -128,6 +129,7 @@ a:hover{
 	background-image: url('../img/wires.png');
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #e3e3e3;
 	padding: 50px;
 }
@@ -140,20 +142,8 @@ a:hover{
 }
 
 .event-title{
-	letter-spacing: .03em;
+	letter-spacing: .05em;
 	text-transform: uppercase;
-}
-
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
 }
 
 
