@@ -59,7 +59,6 @@ a:hover{
 .dropshadow-border{ /* Border + dropshadow design element */
 	padding: 50px;
 	background-color: #fff;
-        background-image: url('../img/paper_bg.jpg');
         border-top: 10px solid #841617;
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 10px;
