@@ -137,7 +137,7 @@
 </div>
 
 <!-- Parallax Image Header -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="https://renegades.d7.ccorbett.lib.ngrok.io/sites/default/files/parallax/banner.jpg" data-image-class="img-responsive" data-image-alt="Parallax Image"><span role="img" aria-label="Parallax Image"> </span></div>	
+<div class="parallax-window" data-parallax="scroll" data-image-src="<?php print render($page['header']); ?>" data-image-class="img-responsive" data-image-alt="Parallax Image"><span role="img" aria-label="Parallax Image"> </span></div>	
 
 
 <!-- Homepage Quote -->
