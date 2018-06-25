@@ -74,22 +74,20 @@
  */
 ?>
 
-<!-- OU Global Header -->
-<div class="global_header">
-    <div class="global_header-wrapper">
-        <ul>
-            <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link" target="_blank"><span>OU Homepage</span></a></li>
-            <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link" target="_blank"><span>Search OU</span></a></li>
-            <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link" target="_blank"><span>OU Social Media</span></a></li>
-            <li class="wordmark">The University of Oklahoma</li>
-        </ul>
-        <div style="clear:both;"></div>
-     </div>
-</div>
-
-
 <!-- Page Header Content -->	
 <div class="fixed-to-top">
+	<!-- OU Global Header -->
+	<div class="global_header">
+	    <div class="global_header-wrapper">
+		<ul>
+		    <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link" target="_blank"><span>OU Homepage</span></a></li>
+		    <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link" target="_blank"><span>Search OU</span></a></li>
+		    <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link" target="_blank"><span>OU Social Media</span></a></li>
+		    <li class="wordmark">The University of Oklahoma</li>
+		</ul>
+		<div style="clear:both;"></div>
+	     </div>
+	</div>
 
 	<!-- OU Libraries Logo -->
 	<div class="lib_logo">
