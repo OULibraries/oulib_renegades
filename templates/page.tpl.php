@@ -209,11 +209,9 @@
 
 
 <!-- Homepage Events -->
-<div class="events_bg">	
 		<?php if (!empty($page['homepage_events'])): ?>
-			<?php print render($page['homepage_events']); ?>
+			<div class="homepage_events"><?php print render($page['homepage_events']); ?></div>
 		<?php endif; ?>
-</div>
 
 
 <!-- OU Global Nav Footer -->
