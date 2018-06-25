@@ -209,7 +209,7 @@
 
 
 <!-- Homepage Events -->
-<div class="homepage_events">
+<div class="events_bg">	
 		<?php if (!empty($page['homepage_events'])): ?>
 			<?php print render($page['homepage_events']); ?>
 		<?php endif; ?>
