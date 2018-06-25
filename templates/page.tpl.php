@@ -134,11 +134,15 @@
 </div>
 
 <!-- Parallax Image Header -->
-<?php print render($page['header']); ?>
+<?php if (!empty($page['header'])): ?>
+	<?php print render($page['header']); ?>
+<?php endif; ?>
 
 <!-- Homepage Quote -->
 <div class="homepage_quote">
-		<?php print render($page['homepage_quote']); ?>
+		<?php if (!empty($page['homepage_quote'])): ?>
+			<?php print render($page['homepage_quote']); ?>
+		<?php endif; ?>
 </div>
 
  
@@ -199,14 +203,16 @@
 <!-- Events Color Block Header -->
 <div class="events_header">
 		<?php if (!empty($page['events_header'])): ?>
-		<?php print render($page['events_header']); ?>
+			<?php print render($page['events_header']); ?>
 		<?php endif; ?>
 </div>
 
 
 <!-- Homepage Events -->
 <div class="homepage_events">
-		<?php print render($page['homepage_events']); ?>
+		<?php if (!empty($page['homepage_events'])): ?>
+			<?php print render($page['homepage_events']); ?>
+		<?php endif; ?>
 </div>
 
 
