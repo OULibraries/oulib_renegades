@@ -313,10 +313,15 @@ a:hover{
 
   @media (max-width: 880px) {
     .exhibit-logo{
-		width: 75%;
+		width: 70%;
   }
   } 
   
+ @media (max-width: 600px) {
+    .exhibit-logo{
+		width: 60%;
+  }
+  }
   
   
  /**
