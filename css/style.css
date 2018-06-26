@@ -76,6 +76,14 @@ a:hover{
         clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 }
 
+.dropshadow-border{
+	padding: 15px;
+    	background-color: #fff;
+   	border: 1px solid #c9c9c9;
+    	box-shadow: 2px 2px 4px #eaeaea;
+    	margin-bottom: 10px;
+}
+
 .center{
 	text-align: center;
 }
