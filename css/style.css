@@ -37,7 +37,7 @@ body {
 	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 	font-size: 1.5em;
 	line-height: 1.25;
-	padding-top: 168px;
+	padding-top: 185px;
 }	
 
 h1, h2, h3 {
@@ -57,7 +57,7 @@ a:hover{
 	color: #153f59;
 }
 
-.dropshadow-border{ /* Border + dropshadow design element */
+.events-container{
 	padding: 50px;
 	background-color: #fff;
         border-top: 10px solid #841617;
@@ -308,19 +308,19 @@ a:hover{
 
 
 .exhibit-logo {
-	width: 70%;
+	width: 75%;
 	padding: 5px;
 }
 
   @media (max-width: 880px) {
     .exhibit-logo{
-		width: 70%;
+		width: 72%;
   }
   } 
   
  @media (max-width: 600px) {
     .exhibit-logo{
-		width: 60%;
+		width: 70%;
   }
   }
   
