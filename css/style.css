@@ -37,8 +37,15 @@ body {
 	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 	font-size: 1.5em;
 	line-height: 1.25;
-	padding-top: 185px;
-}	
+	padding-top: 245px;
+}
+
+ @media (max-width: 768px) {
+  .body {
+    padding-top: 190px;
+  }
+
+}
 
 h1, h2, h3 {
 	font-weight: bold;
