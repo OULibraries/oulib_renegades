@@ -41,7 +41,7 @@ body {
 }
 
  @media (max-width: 768px) {
-  .body {
+ body {
     padding-top: 190px;
   }
 
