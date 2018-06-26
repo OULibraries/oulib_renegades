@@ -13,6 +13,7 @@
    Navigation Bar
    Global Footer
    Social Media Icons
+   Paragraph Styling
    - - - - - - - - -
  */
  
@@ -431,4 +432,99 @@ a:hover{
 .mc-field-group {
 	padding:10px 0px 10px 0px;
 	
+}
+
+
+
+/**
+ * Paragraph Styling
+ */
+ 
+.paragraphs_image img{
+	border: 1px solid #cecece;
+	padding: 5px;
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: #fff;
+}
+
+.paragraph_bundle_featured{
+	border-bottom: 1px dashed #cecece;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_featured h2{
+	font-family: 'Droid Sans';
+	font-weight: bold;
+	font-size: 1.25em;
+}	
+
+.paragraph_bundle_featured_alt{
+	border-bottom: 1px dashed #cecece;
+	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_featured_alt h2{
+	font-family: 'Droid Sans';
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.paragraph_bundle_full_width{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_full_image{
+	margin-top: 15px;
+	margin-bottom: 15px;
+        text-align: center;
+}
+
+.paragraph_bundle_full_image_caption{
+	font-size: .95em;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_image_left{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_image_right{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.paragraph_bundle_image_right img{
+	margin: 15px 0 15px 0;
+}
+
+.paragraph_bundle_margin{
+	margin-bottom: 15px;
+}
+
+.paragraphs_location_description{
+	font-family: 'Droid Sans';
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #565656;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #660000;
+	border-top: 1px solid #cecece;
+        border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
 }
