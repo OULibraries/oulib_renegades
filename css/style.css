@@ -340,15 +340,21 @@ a:hover{
 	padding: 5px;
 }
 
-  @media (max-width: 880px) {
+  @media (max-width: 1300px) {
     .exhibit-logo{
 		width: 72%;
+  }
+  } 
+
+  @media (max-width: 880px) {
+    .exhibit-logo{
+		width: 70%;
   }
   } 
   
  @media (max-width: 600px) {
     .exhibit-logo{
-		width: 70%;
+		width: 65%;
   }
   }
   
