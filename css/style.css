@@ -37,7 +37,7 @@ body {
 	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 	font-size: 1.5em;
 	line-height: 1.25;
-	padding-top: 245px;
+	padding-top: 255px;
 }
 
  @media (max-width: 768px) {
@@ -110,7 +110,7 @@ a:hover{
   }
 
   @media (max-width: 768px) {
-    .lib-logo{
+    .lib-logo img{
 		width: 80%;
   }
   }
@@ -289,12 +289,18 @@ a:hover{
 	padding: 5px;
 } 
 
-  @media (max-width: 845px) {
+  @media (max-width: 1300px) {
     .navbar{
 	font-size: 1.2em;
   }
   } 
 
+
+  @media (max-width: 845px) {
+    .navbar{
+	font-size: 1.1em;
+  }
+  } 
 
   
 @media (min-width: 768px) and (max-width: 1300px) {
