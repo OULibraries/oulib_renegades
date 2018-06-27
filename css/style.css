@@ -302,7 +302,7 @@ a:hover{
   }
   } 
 
-  
+/*  
 @media (min-width: 768px) and (max-width: 1300px) {
    .navbar-collapse.collapse {
        display: none !important;
@@ -317,6 +317,7 @@ a:hover{
         float:none;
     }
 }
+*/
 
 .navbar-default .navbar-nav>li>a{
 	color: #7fb6d2;
