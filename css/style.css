@@ -107,7 +107,13 @@ a:hover{
     .lib-logo{
 		border-bottom: 0px;
   }
-  } 
+  }
+
+  @media (max-width: 768px) {
+    .lib-logo{
+		width: 80%;
+  }
+  }
 
 .lib-logo img{
 	padding: 15px 20px 15px 30px;
@@ -291,7 +297,7 @@ a:hover{
 
 
   
-@media (min-width: 768px) and (max-width: 880px) {
+@media (min-width: 768px) and (max-width: 1300px) {
    .navbar-collapse.collapse {
        display: none !important;
    }
