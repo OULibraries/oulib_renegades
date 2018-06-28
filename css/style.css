@@ -23,8 +23,8 @@
  */
 
 .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -38,6 +38,10 @@ body {
 	font-size: 1.5em;
 	line-height: 1.25;
 	padding-top: 255px;
+}
+
+body.toolbar{
+        padding-top: 255px!important;
 }
 
  @media (max-width: 768px) {
