@@ -26,7 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="paragraph_bundle_full_width">
+<div class="paragraph_bundle_full_width row">
 	<div class="col-md-12">
 	<?php print render($content['field_description']); ?>
 	<?php print render($content['field_description1']); ?>
