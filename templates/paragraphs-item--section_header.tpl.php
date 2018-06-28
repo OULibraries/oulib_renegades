@@ -26,11 +26,13 @@
  * @see template_process()
  */
 ?>
+<div class="container-fluid">
 <div class="row">
 	<div class="col-md-12">
 	<h2 class="paragraphs_section_header"><?php print render($content['field_header']); ?></h2>
 	</div>
-</div>	
+</div>
+</div>
 
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
