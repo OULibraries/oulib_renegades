@@ -123,7 +123,14 @@ a:hover{
 	padding: 15px 20px 15px 30px;
 } 
 
+td.image-frame img {
+    border: 1px solid #cccccccc;
+    padding: 5px;
+    background-color: white;	
+}
 
+.image-frame {
+	width: 250px;}
 
  /**
  * Homepage
