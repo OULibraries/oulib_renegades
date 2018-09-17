@@ -73,215 +73,219 @@
  * @ingroup themeable
  */
 ?>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,900');
+</style>
 
-<!-- Page Header Content -->	
+<!-- Page Header Content -->
 <div class="fixed-to-top">
-	<!-- OU Global Header -->
-	<div class="global_header">
-	    <div class="global_header-wrapper">
-		<ul>
-		    <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link" target="_blank"><span>OU Homepage</span></a></li>
-		    <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link" target="_blank"><span>Search OU</span></a></li>
-		    <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link" target="_blank"><span>OU Social Media</span></a></li>
-		    <li class="wordmark">The University of Oklahoma</li>
-		</ul>
-		<div style="clear:both;"></div>
-	     </div>
-	</div>
+  <!-- OU Global Header -->
+  <div class="global_header">
+    <div class="global_header-wrapper">
+      <ul>
+        <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link" target="_blank"><span>OU Homepage</span></a></li>
+        <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link" target="_blank"><span>Search OU</span></a></li>
+        <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link" target="_blank"><span>OU Social Media</span></a></li>
+        <li class="wordmark">The University of Oklahoma</li>
+      </ul>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
 
-	<!-- OU Libraries Logo -->
-	<div class="lib_logo">
-			<?php print render($page['lib_logo']); ?>
-	</div>
+  <!-- OU Libraries Logo -->
+<!--  <div class="lib_logo">-->
+<!--    --><?php //print render($page['lib_logo']); ?>
+<!--  </div>-->
 
-	  
-	<!-- Logo + Navigation Bar -->
-	<div class="menu">
 
-	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  
-				<?php if (!empty($page['logo'])): ?>
-					<?php print render($page['logo']); ?>
-				<?php endif; ?>
-		   
-		  
-		</div>
+  <!-- Logo + Navigation Bar -->
+  <div class="menu">
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			<?php if (!empty($primary_nav)): ?>
-				<?php print render($primary_nav); ?>
-			<?php endif; ?>  
-		  </ul>   
-		  
-		</div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-	</nav>
-	 
-	</div> <!-- /#menu -->
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <?php if (!empty($page['logo'])): ?>
+            <?php print render($page['logo']); ?>
+          <?php endif; ?>
+
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <?php if (!empty($primary_nav)): ?>
+              <?php print render($primary_nav); ?>
+            <?php endif; ?>
+            <img class="contact-icon" src="https://intranet.libraries.ou.edu/docs/documents/contact.2535.PNG">
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+  </div> <!-- /#menu -->
 </div>
 
 <!-- Parallax Image Header -->
 <?php if (!empty($page['header'])): ?>
-	<?php print render($page['header']); ?>
+  <?php print render($page['header']); ?>
 <?php endif; ?>
 
 <!-- Homepage Quote -->
 <div class="homepage_quote">
-		<?php if (!empty($page['homepage_quote'])): ?>
-			<?php print render($page['homepage_quote']); ?>
-		<?php endif; ?>
+  <?php if (!empty($page['homepage_quote'])): ?>
+    <?php print render($page['homepage_quote']); ?>
+  <?php endif; ?>
 </div>
 
- 
-<!-- Main Content/Body Section --> 
+
+<!-- Main Content/Body Section -->
 <div id="holder">
-<div class="container whitebg">
+  <div class="container whitebg">
 
-<div id="body">
+    <div id="body">
 
-<div class="main-container">
+      <div class="main-container">
 
-  <div class="row">
+        <div class="row">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
+          <?php if (!empty($page['sidebar_first'])): ?>
+            <aside class="col-sm-3" role="complementary">
+              <?php print render($page['sidebar_first']); ?>
+            </aside>  <!-- /#sidebar-first -->
+          <?php endif; ?>
 
-    <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-      <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
+          <section<?php print $content_column_class; ?>>
+            <?php if (!empty($page['highlighted'])): ?>
+              <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+            <?php endif; ?>
+            <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+            <a id="main-content"></a>
+            <?php print render($title_prefix); ?>
+            <?php if (!empty($title)): ?>
+              <h1 class="page-header"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php print $messages; ?>
+            <?php if (!empty($tabs)): ?>
+              <?php print render($tabs); ?>
+            <?php endif; ?>
+            <?php if (!empty($page['help'])): ?>
+              <?php print render($page['help']); ?>
+            <?php endif; ?>
+            <?php if (!empty($action_links)): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+            <?php print render($page['content']); ?>
+          </section>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
+          <?php if (!empty($page['sidebar_second'])): ?>
+            <aside class="col-sm-3" role="complementary">
+              <?php print render($page['sidebar_second']); ?>
+            </aside>  <!-- /#sidebar-second -->
+          <?php endif; ?>
 
+        </div>
+
+      </div>
+    </div>
+
+    <!-- end body tag -->
   </div>
-  
-</div>
-</div>
 
-<!-- end body tag -->
-</div>
-	
-<!-- Events Color Block Header -->
-<div class="events_header">
-		<?php if (!empty($page['events_header'])): ?>
-			<?php print render($page['events_header']); ?>
-		<?php endif; ?>
-</div>
+  <!-- Events Color Block Header -->
+  <div class="events_header">
+    <?php if (!empty($page['events_header'])): ?>
+      <?php print render($page['events_header']); ?>
+    <?php endif; ?>
+  </div>
 
 
-<!-- Homepage Events -->
-		<?php if (!empty($page['homepage_events'])): ?>
-			<div class="homepage_events"><?php print render($page['homepage_events']); ?></div>
-		<?php endif; ?>
+  <!-- Homepage Events -->
+  <?php if (!empty($page['homepage_events'])): ?>
+    <div class="homepage_events"><?php print render($page['homepage_events']); ?></div>
+  <?php endif; ?>
 
 
-<!-- OU Global Nav Footer -->
-<div class="footer img-center">
+  <!-- OU Global Nav Footer -->
+  <div class="footer img-center">
     <div class="container-fluid">
-        <div class="row" style="padding-top: 20px;">
-            <div class="col-md-3 col-sm-4 col-xs-12" style="padding-bottom: 30px;">
-                <img src="/sites/all/themes/oulib_renegades/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;"/>
-                <a href="http://libraries.ou.edu" target="_blank">University
-                    Libraries</a><br/>
-					401 W. Brooks St<br/>
-					Norman, OK 73019<br/>
-					(405) 325-4142
-            </div>
-            <div class="col-md-4 col-sm-8 col-xs-12">
+      <div class="row" style="padding-top: 20px;">
+        <div class="col-md-3 col-sm-4 col-xs-12" style="padding-bottom: 30px;">
+          <img src="/sites/all/themes/oulib_renegades/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;"/>
+          <a href="http://libraries.ou.edu" target="_blank">University
+            Libraries</a><br/>
+          401 W. Brooks St<br/>
+          Norman, OK 73019<br/>
+          (405) 325-4142
+        </div>
+        <div class="col-md-4 col-sm-8 col-xs-12">
                     <span style="width: 50%; float: left;">
                         <ul>
                             <li><a href="about.html"" alt="About link">About This Site</a></li>
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
                                    alt="Accessibility link" target="_blank">Accessibility</a></li>
 							<li><a href="https://libraries.ou.edu/jobs"
-                                   alt="Jobs link" target="_blank">Job Opportunities</a></li>
+                     alt="Jobs link" target="_blank">Job Opportunities</a></li>
                         </ul>
                     </span>
 
-                <div style="width: 50%; float: right;">
-                    <ul>
-                        <li>
-                            <a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html"
-                               alt="Copyright link"
-                               target="_blank">Copyright</a></li>
-                        <li>
-                            <a href="http://www.ou.edu/content/web/landing/policy.html"
-                               alt="Policies link" target="_blank">Policies</a>
-                        </li>
-                        <li>
-                            <a href="http://www.ou.edu/content/web/landing/legalnotices.html"
-                               alt="Legal Notice link" target="_blank">Legal
-                                Notice</a></li>
-                    </ul>
-                </div>
-                <div style="clear: both; padding-bottom: 30px;"></div>
-            </div>
-
-            <div class="col-md-3 col-sm-12 col-xs-12">
-                <div class="social">
-                    <ul>
-                        <li><a href="https://www.facebook.com/oulibraries"
-                               class="facebook" title="facebook"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/facebook.png"
-                                                    alt="Facebook Icon"></a></li>
-                        <li><a href="https://twitter.com/OU_Libraries"
-                               class="twitter" title="twitter"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/twitter.png"
-                                                    alt="Twitter Icon"></a></li>
-                        <li>
-                            <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
-                               class="youtube" title="youtube"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/youtube.png"
-                                                    alt="YouTube Icon"></a></li>
-                        <li><a href="https://www.instagram.com/oulibraries/"
-                               class="instagram" title="instagram"
-                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/instagram.png"
-                                                    alt="Instagram Icon"></a></li>
-                    </ul>
-                </div>
-            </div>
+          <div style="width: 50%; float: right;">
+            <ul>
+              <li>
+                <a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html"
+                   alt="Copyright link"
+                   target="_blank">Copyright</a></li>
+              <li>
+                <a href="http://www.ou.edu/content/web/landing/policy.html"
+                   alt="Policies link" target="_blank">Policies</a>
+              </li>
+              <li>
+                <a href="http://www.ou.edu/content/web/landing/legalnotices.html"
+                   alt="Legal Notice link" target="_blank">Legal
+                  Notice</a></li>
+            </ul>
+          </div>
+          <div style="clear: both; padding-bottom: 30px;"></div>
         </div>
+
+        <div class="col-md-3 col-sm-12 col-xs-12">
+          <div class="social">
+            <ul>
+              <!--                        <li><a href="https://www.facebook.com/oulibraries"-->
+              <!--                               class="facebook" title="facebook"-->
+              <!--                               target="_blank"><img src="/sites/all/themes/oulib_renegades/img/facebook.png"-->
+              <!--                                                    alt="Facebook Icon"></a></li>-->
+              <li><a href="https://twitter.com/OU_Libraries"
+                     class="twitter" title="twitter"
+                     target="_blank"><img src="/sites/all/themes/oulib_renegades/img/twitter.png"
+                                          alt="Twitter Icon"></a></li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
+                   class="youtube" title="youtube"
+                   target="_blank"><img src="/sites/all/themes/oulib_renegades/img/youtube.png"
+                                        alt="YouTube Icon"></a></li>
+              <li><a href="https://www.instagram.com/oulibraries/"
+                     class="instagram" title="instagram"
+                     target="_blank"><img src="/sites/all/themes/oulib_renegades/img/instagram.png"
+                                          alt="Instagram Icon"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+    </footer>
 
     <!-- footer -->
 
 
-</div>
+  </div>

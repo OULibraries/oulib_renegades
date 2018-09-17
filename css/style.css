@@ -104,7 +104,8 @@ a:hover{
 }
 
 .lib_logo{
-	background-color: #000;
+	background-color: white;
+        height: 229px;
 }
 
   @media (max-width: 1180px) {
@@ -120,7 +121,9 @@ a:hover{
   }
 
 .lib-logo img{
-	padding: 15px 20px 15px 30px;
+  height: 100px;
+  margin: 25px 0;
+	padding: 5px 20px 5px 30px;
 } 
 
 td.image-frame img {
@@ -330,15 +333,30 @@ td.image-frame img {
 }
 */
 
+.contact-icon {
+  padding-top: 22%;
+  width: 50px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: white !important;
+    font-family: "Libre Franklin";
+    color: #001343;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
 .navbar-default .navbar-nav>li>a{
 	color: #7fb6d2;
+
 	border-bottom: 8px solid transparent;
+  padding-top: 40%;
 	margin: 2px;
 }
  
 .navbar-default .navbar-nav>li>a:hover{
 	color: #06131c;
-	border-bottom: 8px solid #133f59;
+	/*border-bottom: 8px solid #133f59;*/
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
