@@ -129,7 +129,9 @@
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
             <?php endif; ?>
+            <a href="/contactus">
             <img class="contact-icon" src="https://intranet.libraries.ou.edu/docs/documents/contact.2535.PNG">
+            </a>
           </ul>
 
         </div><!-- /.navbar-collapse -->

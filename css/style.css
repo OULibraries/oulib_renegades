@@ -620,6 +620,10 @@ ul.nav.navbar-nav.navbar-right {
   width: 50px;
 }
 
+ol.breadcrumb {
+  padding: 10px 0 10px 69px;
+}
+
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     background-color: white !important;
     font-family: "Libre Franklin";
