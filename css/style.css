@@ -356,6 +356,80 @@ td.image-frame img {
    line-height: 43px;
  }
 
+.icon-lg-screen {
+  float: right;
+}
+
+
+@media (max-width: 624px){
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: .6em;
+    width: 80%;
+    top: 6%;
+    left: 3%;
+    line-height: 13px;
+  }
+
+  .icon-lg-screen img {
+    width: 65%;
+    margin-top: 25%;
+    margin-left: 30%;
+  }
+
+  .quote-text p{
+    font-size: .6em;
+    line-height: 13px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 625px) and (max-width: 768px){
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1em;
+    width: 78%;
+    top: 6%;
+    left: 3%;
+    line-height: 25px;
+  }
+
+  .quote-text p{
+    font-size: 1em;
+    line-height: 25px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1em;
+    width: 94%;
+    top: 6%;
+    left: 3%;
+    line-height: 21px;
+  }
+
+  .quote-text p{
+    font-size: 1em;
+    line-height: 21px;
+    /*width: 50%;*/
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1350px) {
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1.3em;
+    width: 85%;
+    top: 10%;
+    left: 7%;
+    line-height: 35px;
+  }
+
+  .quote-text p{
+    font-size: 1.3em;
+    line-height: 35px;
+  }
+}
+
 div.gallery-yellow p::first-letter {
   /*font-size: 200%;*/
   color: #ffc527;
@@ -483,13 +557,13 @@ div.gallery-blue p::first-letter {
 .quote-text {
   color:#ffffff;
   position:absolute;
-  width:320px;
+  width:37%;
   line-height:33px;
   top: 60%;
   left: 62%;
   font-weight: 400;
   font-family: Arial;
-  font-size:1.3em;
+  font-size:1em;
 }
 
 .gallery-name {
