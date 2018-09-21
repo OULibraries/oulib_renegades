@@ -73,13 +73,6 @@
  * @ingroup themeable
  */
 ?>
-<style>
-  @import url('https://fonts.googleapis.com/css?family=Libre+Franklin:400,900');
-</style>
-
-<link href="http://allfont.net/allfont.css?fonts=franklin-gothic-medium" rel="stylesheet" type="text/css" />
-<!--<script src="https://cdnjs.com/libraries/fullPage.js"></script>-->
-
 
 <!-- Page Header Content -->
 <div class="fixed-to-top">
@@ -97,9 +90,9 @@
   </div>
 
   <!-- OU Libraries Logo -->
-<!--  <div class="lib_logo">-->
-<!--    --><?php //print render($page['lib_logo']); ?>
-<!--  </div>-->
+  <div class="lib_logo">
+    <?php print render($page['lib_logo']); ?>
+  </div>
 
 
   <!-- Logo + Navigation Bar -->
@@ -125,11 +118,10 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav">
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
             <?php endif; ?>
-            <img class="contact-icon" src="https://intranet.libraries.ou.edu/docs/documents/contact.2535.PNG">
           </ul>
 
         </div><!-- /.navbar-collapse -->
@@ -139,7 +131,6 @@
   </div> <!-- /#menu -->
 </div>
 
-<div id="fullpages">
 <!-- Parallax Image Header -->
 <?php if (!empty($page['header'])): ?>
   <?php print render($page['header']); ?>
@@ -155,7 +146,7 @@
 
 <!-- Main Content/Body Section -->
 <div id="holder">
-  <div class="whitebg">
+  <div class="container whitebg">
 
     <div id="body">
 
@@ -163,36 +154,34 @@
 
         <div class="row">
 
-          <?php if (!empty($page['sidebar_first'])): ?>
-            <aside class="col-sm-3" role="complementary">
-              <?php print render($page['sidebar_first']); ?>
-            </aside>  <!-- /#sidebar-first  -->
-          <?php endif; ?>
-
-<!--          <section>--><?php //print $content_column_class; ?>
-            <?php if (!empty($page['highlighted'])): ?>
-              <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
-            <?php endif; ?>
-            <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-            <a id="main-content"></a>
-            <?php print render($title_prefix); ?>
-            <?php if (!empty($title)): ?>
-              <h1 class="page-header"><?php print $title; ?></h1>
-            <?php endif; ?>
-            <?php print render($title_suffix); ?>
-            <?php print $messages; ?>
-            <?php if (!empty($tabs)): ?>
-              <?php print render($tabs); ?>
-            <?php endif; ?>
-            <?php if (!empty($page['help'])): ?>
-              <?php print render($page['help']); ?>
-            <?php endif; ?>
-            <?php if (!empty($action_links)): ?>
-              <ul class="action-links"><?php print render($action_links); ?></ul>
-            <?php endif; ?>
-<!--          <div class="section">-->
-            <?php print render($page['content']); ?>
-<!--          </div>-->
+<!--          --><?php //if (!empty($page['sidebar_first'])): ?>
+<!--            <aside class="col-sm-3" role="complementary">-->
+<!--              --><?php //print render($page['sidebar_first']); ?>
+<!--            </aside>  <!-- /#sidebar-first -->-->
+<!--          --><?php //endif; ?>
+<!---->
+<!--          <section--><?php //print $content_column_class; ?><!-->-->
+<!--            --><?php //if (!empty($page['highlighted'])): ?>
+<!--              <div class="highlighted jumbotron">--><?php //print render($page['highlighted']); ?><!--</div>-->
+<!--            --><?php //endif; ?>
+<!--            --><?php //if (!empty($breadcrumb)): print $breadcrumb; endif;?>
+<!--            <a id="main-content"></a>-->
+<!--            --><?php //print render($title_prefix); ?>
+<!--            --><?php //if (!empty($title)): ?>
+<!--              <h1 class="page-header">--><?php //print $title; ?><!--</h1>-->
+<!--            --><?php //endif; ?>
+<!--            --><?php //print render($title_suffix); ?>
+<!--            --><?php //print $messages; ?>
+<!--            --><?php //if (!empty($tabs)): ?>
+<!--              --><?php //print render($tabs); ?>
+<!--            --><?php //endif; ?>
+<!--            --><?php //if (!empty($page['help'])): ?>
+<!--              --><?php //print render($page['help']); ?>
+<!--            --><?php //endif; ?>
+<!--            --><?php //if (!empty($action_links)): ?>
+<!--              <ul class="action-links">--><?php //print render($action_links); ?><!--</ul>-->
+<!--            --><?php //endif; ?>
+<!--            --><?php //print render($page['content']); ?>
 <!--          </section>-->
 
           <?php if (!empty($page['sidebar_second'])): ?>
@@ -205,10 +194,9 @@
 
       </div>
     </div>
+
+    <!-- end body tag -->
   </div>
-<!--     end body tag -->
-  </div>
-</div>
 
   <!-- Events Color Block Header -->
   <div class="events_header">
@@ -297,16 +285,3 @@
 
 
   </div>
-<!--<script>-->
-<!--  new fullpage('#fullpage', {-->
-<!--    //options here-->
-<!--    // autoScrolling:true,-->
-<!--    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',-->
-<!--    // scrollHorizontally: true,-->
-<!--    // scrollHorizontallyKey: 'OPEN-SOURCE-GPLV3-LICENSE',-->
-<!--  });-->
-<!---->
-<!--  //methods-->
-<!--  // fullpage_api.setAllowScrolling(false);-->
-<!--</script>-->
-
