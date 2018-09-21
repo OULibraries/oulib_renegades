@@ -37,7 +37,7 @@ body {
 	font-family: Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif; 
 	font-size: 1.5em;
 	line-height: 1.25;
-	padding-top: 255px;
+	padding-top: 155px;
 }
 
 body.toolbar{
@@ -103,8 +103,14 @@ a:hover{
 	z-index: 1030;
 }
 
+.with-margin-five {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .lib_logo{
-	background-color: #000;
+	background-color: white;
+        height: 229px;
 }
 
   @media (max-width: 1180px) {
@@ -120,10 +126,19 @@ a:hover{
   }
 
 .lib-logo img{
-	padding: 15px 20px 15px 30px;
+  height: 100px;
+  /*margin: 25px 0;*/
+	padding: 5px 20px 5px 30px;
 } 
 
+td.image-frame img {
+    border: 1px solid #cccccccc;
+    padding: 5px;
+    background-color: white;	
+}
 
+.image-frame {
+	width: 250px;}
 
  /**
  * Homepage
@@ -280,8 +295,333 @@ a:hover{
     transition: all 0.3s linear;
 }
 
- 
- 
+
+/*#section1 .fp-bg {*/
+  /*background-image: url("https://intranet.libraries.ou.edu/docs/documents/quote6.2565.png");*/
+  /*background-size: cover;*/
+  /*background-position: center 80%;*/
+  /*height: 100%;*/
+/*}*/
+
+ /*
+ * Galleries
+ */
+
+.opacity img {
+  opacity: .5;
+}
+
+.gallery-section {
+  position:relative;
+}
+
+.gallery-section-item {
+  position: absolute;
+  bottom:7px;
+  right:7px;
+}
+
+.gallery-section-item a{
+  color:#ffffff;
+  font-size:1.5em;
+}
+
+ .gallery-yellow {
+   width: 900px;
+   position: absolute;
+   top: 20%;
+   left: 17%;
+   font-family: Arial;
+   font-size: 1.6em;
+   line-height: 43px;
+ }
+
+ .gallery-green {
+   width: 900px;
+   position: absolute;
+   top: 20%;
+   left: 17%;
+   font-family: Arial;
+   font-size: 1.6em;
+   line-height: 43px;
+ }
+
+ .gallery-blue {
+   width: 900px;
+   position: absolute;
+   top: 20%;
+   left: 17%;
+   font-family: Arial;
+   font-size: 1.6em;
+   line-height: 43px;
+ }
+
+.icon-lg-screen {
+  float: right;
+}
+
+
+@media (max-width: 624px){
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: .6em;
+    width: 80%;
+    top: 6%;
+    left: 3%;
+    line-height: 13px;
+  }
+
+  .icon-lg-screen img {
+    width: 65%;
+    margin-top: 25%;
+    margin-left: 30%;
+  }
+
+  .quote-text p{
+    font-size: .6em;
+    line-height: 13px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 625px) and (max-width: 768px){
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1em;
+    width: 78%;
+    top: 6%;
+    left: 3%;
+    line-height: 25px;
+  }
+
+  .quote-text p{
+    font-size: 1em;
+    line-height: 25px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1em;
+    width: 94%;
+    top: 6%;
+    left: 3%;
+    line-height: 21px;
+  }
+
+  .quote-text p{
+    font-size: 1em;
+    line-height: 21px;
+    /*width: 50%;*/
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1350px) {
+  .gallery-yellow, .gallery-blue, .gallery-green {
+    font-size: 1.3em;
+    width: 85%;
+    top: 10%;
+    left: 7%;
+    line-height: 35px;
+  }
+
+  .quote-text p{
+    font-size: 1.3em;
+    line-height: 35px;
+  }
+}
+
+div.gallery-yellow p::first-letter {
+  /*font-size: 200%;*/
+  color: #ffc527;
+  font-family: "Times New Roman";
+  float: left;
+  font-size: 8em;
+  line-height: 60px;
+  padding-right: 6px;
+  margin-top: -15px;
+}
+
+  .gallery-yellow-link {
+    /*background-image: url(https://intranet.libraries.ou.edu/docs/documents/link-yellow.2567.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
+    position: absolute;
+    height: 76px;
+    width: 215px;
+    /*padding-top: 2%;*/
+    bottom: 7%;
+    right: 5%;
+  }
+
+  .gallery-green-link {
+    /*background-image: url(https://intranet.libraries.ou.edu/docs/documents/link-green.2568.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
+    position: absolute;
+    height: 76px;
+    width: 215px;
+    /*padding-top: 2%;*/
+    bottom: 7%;
+    right: 5%;
+  }
+
+
+  .gallery-blue-link {
+    /*background-image: url(https://intranet.libraries.ou.edu/docs/documents/link-blue.2569.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
+    position: absolute;
+    height: 76px;
+    width: 215px;
+    /*padding-top: 2%;*/
+    bottom: 7%;
+    right: 5%;
+  }
+
+  .gallery-yellow-link a, .gallery-green-link a, .gallery-blue-link a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+div.gallery-green p::first-letter {
+  /*font-size: 200%;*/
+  color: #b0c1aa;
+  font-family: "Times New Roman";
+  float: left;
+  font-size: 8em;
+  line-height: 60px;
+  padding-right: 6px;
+  margin-top: -15px;
+}
+
+div.gallery-blue p::first-letter {
+  /*font-size: 200%;*/
+  color: #6792aa;
+  font-family: "Times New Roman";
+  float: left;
+  font-size: 8em;
+  line-height: 60px;
+  padding-right: 6px;
+  margin-top: -15px;
+}
+
+.gallery-yellow-container, .gallery-blue-container, .gallery-green-container {
+  position: relative;
+  color: white;
+}
+
+
+.gallery-image-deco {
+  border: 11px solid white;
+  stroke: black;
+  stroke-width: 2px;
+  box-shadow: 0 0 50px #cccccc;
+  width: 100%;
+  background-color: #160b01;
+}
+
+.gallery-image-deco-single {
+  border: 11px solid white;
+  stroke: black;
+  stroke-width: 2px;
+  box-shadow: 0 0 50px #a9b9a3;
+  width: 100%;
+  background-color: #a9b9a3;
+}
+
+.gallery-image-deco img {
+  margin: auto;
+}
+
+.gallery-image-deco-single img {
+  margin: auto;
+}
+
+/*.field-content.gallery-image-deco {*/
+  /*background-color: #a9b9a3 ;*/
+/*}*/
+
+.container-quote {
+  position: relative;
+  color: white;
+}
+
+.quote-image {
+  margin-left: 8%;
+}
+
+.quote-text {
+  color:#ffffff;
+  position:absolute;
+  width:37%;
+  line-height:33px;
+  top: 60%;
+  left: 62%;
+  font-weight: 400;
+  font-family: Arial;
+  font-size:1em;
+}
+
+.gallery-name {
+     position: absolute;
+     bottom: 15%;
+     Width: 84%;
+     text-align: right;
+     padding-left: 12px;
+     padding-right: 0px;
+   }
+
+.gallery-name a {
+     color: #ffffff;
+     font-size: .9em;
+     text-decoration: none;
+   }
+
+/*
+ * Exhibit Items
+ */
+
+.exhibit-item-panel-image img{
+  background-color: #a9b9a3;
+}
+
+.exhibit-meta-label {
+  margin: 0 0 -6px 0;
+  color: #a9b9a3;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium";
+  font-size: 22px;
+}
+
+.exhibit-meta-field {
+  margin: 0 0 15px 0 !important;
+  color: black !important;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium";
+  font-size: 25px;
+}
+
+.exhibit-meta-field a {
+  color: black !important;
+}
+
+.exhibit-title {
+  color: #001343;
+  font-size: 33px;
+  font-family: "Franklin Gothic Medium";
+}
+
+h3.field-content {
+  font-size: 30px;
+}
+
+.diagonal-lines img{
+  width: 33%;
+  margin-bottom: 20px;
+}
+
  /**
  * Navigation Bar
  */
@@ -290,8 +630,16 @@ a:hover{
 	background-color: #fff;
 	border-radius: 0;
 	font-size: 1.4em;
-	padding: 5px;
-} 
+	padding: 5px 10%;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  margin-right: -6%;
+}
+
+.row.content-border.text-block {
+  width: 95%;
+}
 
   @media (max-width: 1300px) {
     .navbar{
@@ -304,7 +652,25 @@ a:hover{
     .navbar{
 	font-size: 1.1em;
   }
-  } 
+  }
+
+.panel-pane.pane-views.pane-banner-homepage {
+  border: 11px solid white;
+  stroke: black;
+  stroke-width: 2px;
+  box-shadow: 0 0 50px #cccccc
+}
+
+.full-width-renegades {
+  background-color: #001343;
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 2%;
+}
+
+.div.full-width-renegades img:first-child {
+  margin-left: 14%;
+}
 
 /*  
 @media (min-width: 768px) and (max-width: 1300px) {
@@ -323,15 +689,35 @@ a:hover{
 }
 */
 
-.navbar-default .navbar-nav>li>a{
-	color: #7fb6d2;
-	border-bottom: 8px solid transparent;
-	margin: 2px;
+.contact-icon {
+  padding-top: 12%;
+  width: 50px;
+}
+
+ol.breadcrumb {
+  padding: 10px 0 10px 69px;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: white !important;
+    font-family: "Libre Franklin";
+    color: #001343;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+.navbar-default .navbar-nav>li>a {
+  color: #000000;
+  border-bottom: 8px solid transparent;
+  padding-top: 25%;
+  font-family: "Libre Franklin";
+  text-transform: uppercase;
+  margin: 2px;
 }
  
 .navbar-default .navbar-nav>li>a:hover{
 	color: #06131c;
-	border-bottom: 8px solid #133f59;
+	/*border-bottom: 8px solid #133f59;*/
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;

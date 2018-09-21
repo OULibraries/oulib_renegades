@@ -31,9 +31,12 @@ regions[login]			= 'Login'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/globalnav.css
+stylesheets[all][] = js/fullPage.js/src/fullpage.css
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
 scripts[] = js/parallax.min.js
+;scripts[] = js/fullPage.js/src/fullpage.js
+scripts[] = js/fullPage.js/dist/fullpage.extensions.min.js
