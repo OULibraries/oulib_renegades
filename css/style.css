@@ -360,6 +360,30 @@ td.image-frame img {
   float: right;
 }
 
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+  .gallery-yellow, .gallery-blue, .gallery-green {
+  font-size: .6em;
+  width: 80%;
+  top: 6%;
+  left: 3%;
+  line-height: 13px;
+}
+
+  .icon-lg-screen img {
+    width: 65%;
+    margin-top: 25%;
+    margin-left: 30%;
+  }
+
+  .quote-text p{
+    font-size: .5em;
+    line-height: 13px;
+    width: 95%;
+  }}
+
 
 @media (max-width: 624px){
   .gallery-yellow, .gallery-blue, .gallery-green {
@@ -379,7 +403,7 @@ td.image-frame img {
   .quote-text p{
     font-size: .6em;
     line-height: 13px;
-    width: 50%;
+    /*width: 50%;*/
   }
 }
 
