@@ -46,7 +46,7 @@ body.toolbar{
 
  @media (max-width: 768px) {
  body {
-    padding-top: 190px;
+    /*padding-top: 190px;*/
   }
 
 }
@@ -360,6 +360,10 @@ td.image-frame img {
   float: right;
 }
 
+.horizontal-logo {
+  margin-top: -500px !important;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
@@ -385,29 +389,69 @@ and (max-device-width : 667px) {
   }}
 
 
+/*
+ * IPhone
+ */
 @media (max-width: 624px){
   .gallery-yellow, .gallery-blue, .gallery-green {
-    font-size: .6em;
+    font-size: .5em;
     width: 80%;
-    top: 6%;
-    left: 3%;
-    line-height: 13px;
+    top: 14%;
+    left: 5%;
+    line-height: 11px;
   }
 
   .icon-lg-screen img {
-    width: 65%;
-    margin-top: 25%;
-    margin-left: 30%;
+    width: 44%;
+    margin-top: 50%;
+    margin-left: 53%;
   }
 
   .quote-text p{
-    font-size: .6em;
+    font-size: .5em;
     line-height: 13px;
     /*width: 50%;*/
   }
+
+  div.gallery-yellow p::first-letter, div.gallery-green p::first-letter, div.gallery-blue p::first-letter {
+    font-size: 6em !important;
+    line-height: 30px !important;
+    padding-right: 3px !important;
+    padding-top: 7px;
+    margin-left: 3px;
+  }
 }
 
-@media (min-width: 625px) and (max-width: 768px){
+  /*
+   * iPhone landscape
+   */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .quote-text {
+      font-size: .7em !important;
+    }
+    .gallery-yellow, .gallery-blue, .gallery-green {
+      font-size: .9em !important;
+      width: 78%;
+      left: 3%;
+      line-height: 25px !important;
+    }
+    .gallery-blue, .gallery-green {
+      top: 15% !important;
+    }
+    .gallery-yellow {
+      top: 12% !important;
+    }
+  }
+
+  /*
+   * Google Pixel
+   */
+
+@media (min-width: 625px) and (max-width: 768px) {
   .gallery-yellow, .gallery-blue, .gallery-green {
     font-size: 1em;
     width: 78%;
@@ -415,12 +459,32 @@ and (max-device-width : 667px) {
     left: 3%;
     line-height: 25px;
   }
+}
 
+@media (min-width: 625px) and (max-width: 768px) and (orientation: landscape){
   .quote-text p{
     font-size: 1em;
     line-height: 25px;
     width: 80%;
   }
+}
+
+@media (min-width: 625px) and (max-width: 768px) and (orientation: portrait){
+  .quote-text p{
+    font-size: 5em !important;
+    line-height: 25px;
+    width: 80%;
+  }
+}
+
+@media
+  (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .quote-text p{
+      font-size: 5em !important;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1000px) {
