@@ -129,9 +129,9 @@
             <?php if (!empty($primary_nav)): ?>
               <?php print render($primary_nav); ?>
             <?php endif; ?>
-            <a href="/contactus">
-            <img class="contact-icon" src="https://intranet.libraries.ou.edu/docs/documents/contact.2535.PNG">
-            </a>
+<!--            <a href="/contactus">-->
+<!--            <img class="contact-icon" src="https://intranet.libraries.ou.edu/docs/documents/contact.2535.PNG">-->
+<!--            </a>-->
           </ul>
 
         </div><!-- /.navbar-collapse -->
@@ -241,7 +241,7 @@
         <div class="col-md-4 col-sm-8 col-xs-12">
                     <span style="width: 50%; float: left;">
                         <ul>
-                            <li><a href="about.html"" alt="About link">About This Site</a></li>
+                            <li><a href="/about"" alt="About link">About Renegades</a></li>
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
                                    alt="Accessibility link" target="_blank">Accessibility</a></li>
 							<li><a href="https://libraries.ou.edu/jobs"
