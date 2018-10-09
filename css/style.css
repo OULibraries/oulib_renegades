@@ -364,6 +364,19 @@ td.image-frame img {
   margin-top: -500px !important;
 }
 
+/*
+ * About Page
+ */
+
+article {
+  width: 80%;
+  margin: auto;
+}
+
+.page-header {
+  display: none;
+}
+
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px) {
@@ -795,9 +808,9 @@ ol.breadcrumb {
   }
 
 .navbar-default .navbar-nav>li>a {
-  color: #000000;
+  color: #00113f;
   border-bottom: 8px solid transparent;
-  padding-top: 25%;
+  padding-top: 27px;
   font-family: "Libre Franklin";
   text-transform: uppercase;
   margin: 2px;
