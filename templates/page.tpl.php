@@ -299,16 +299,11 @@
 
 
   </div>
-<!--<script>-->
-<!--  new fullpage('#fullpage', {-->
-<!--    //options here-->
-<!--    // autoScrolling:true,-->
-<!--    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',-->
-<!--    // scrollHorizontally: true,-->
-<!--    // scrollHorizontallyKey: 'OPEN-SOURCE-GPLV3-LICENSE',-->
-<!--  });-->
-<!---->
-<!--  //methods-->
-<!--  // fullpage_api.setAllowScrolling(false);-->
-<!--</script>-->
-
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5W4N7EK80R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5W4N7EK80R');
+</script>
